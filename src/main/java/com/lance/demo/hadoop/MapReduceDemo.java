@@ -20,8 +20,6 @@ import java.util.StringTokenizer;
 public class MapReduceDemo {
     public void demo(@Nonnull String inputFile, @NotNull String outputFile) throws Exception {
         Configuration conf = new Configuration();
-
-        conf.set("fs.defaultFS", "hdfs://192.168.1.72:9000/");
         String[] otherArgs = new GenericOptionsParser(conf, null).getRemainingArgs();
 
 
